@@ -1,0 +1,547 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:url(../img/bg.png);
+	background-repeat: repeat;
+}
+#main{
+	position: relative;
+	width: 100%;
+	min-width:1000px;
+}
+#title{
+	text-align: center;
+}
+#top-header{
+	width: 25%;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	animation: top-header cubic-bezier(0.18, 0.89, 0.32, 1.28) 1s;
+}
+#top-header img:hover{
+	animation: top-header-img cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.5s;
+
+}
+.pixiv-ID{
+	padding: 5px;
+	position: absolute;
+	z-index: 9;
+	border-radius: 7px;
+	transform: rotate(-3deg);
+	box-shadow: #969696 1px 1px 8px;
+	animation:youki-text 1s;
+}
+.P-ID1{
+	top: 560px;
+	left: 65%;
+}
+.P-ID2{
+	top: 615px;
+	left: 40%;
+}
+.P-ID3{
+	top: 550px;
+	left: 65%;
+}
+.P-ID4{
+	top: 350px;
+	left: 25%;
+}
+.pixiv-ID p{
+	  color: #FF83C1;
+}
+/*导航栏部分*/
+#left-nav{
+
+	width:250px;
+	height: 487px;
+	z-index: 10;
+	background:url(../img/nav.png) no-repeat 0 0;
+}
+#nav-item{
+	padding:40px;
+	margin:0;
+}
+.navtext{
+	position: absolute;
+	top: 6px;
+	padding-left: 25px;
+	font-size: 29px;
+	font-weight: bold;
+	color: #009CFF;
+	transition: color 0.2s;
+}
+.NavBtn img{
+	position: absolute;
+	top: 6px;
+}
+.NavBtn{
+	position: relative;
+	height: 50px;
+	transform: rotate(-3deg);
+	border-bottom: 7px solid #FDEEF2;
+	box-shadow: #E0E0E0 1px 2px 0px;
+}
+.NavBtn-hover{
+	width: 100%;
+}
+.navbg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 50px;
+	z-index: 0;
+	transition: width 0.2s;
+	background: url(../img/hover_bg.png);
+}
+
+/* 中间部分 */
+#swiper-container{
+	margin: 0 auto;
+	width: 1000px;
+}
+/*分辨率适配*/
+@media screen and (min-width: 300px) and (max-width: 1199) {
+	#swiper-container{
+		margin: 0 auto;
+		width: 950px;
+	}
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+	#swiper-container{
+		margin: 0 auto;
+		width: 950px;
+	}
+	/*第二页*/
+	.youki2-about6 p{
+		font-size: 50px !important;}
+}
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
+	#swiper-container{
+		margin: 0 auto;
+		width: 1500px;
+	}
+	/*第二页*/
+	.youki2-about6 p{
+		font-size: 60px !important;}
+}
+
+.swiper-slide{
+	width: 100%;
+	height: auto;
+}
+.box-bg{
+	width:100%;
+	animation:swiper-img 1s;
+}
+.youki-box{
+	position: absolute;
+	padding: 10px;
+	border-radius: 7px;
+	background: url(../img/text_bg.png);
+	box-shadow: #969696 1px 1px 8px;
+	transition: box-shadow 0.2s ;
+}
+/*第一页*/
+.youki1-content{
+	top: 320px;
+	left: 25%;
+	transition: box-shadow 0.2s ;
+	opacity: 0.8;
+	z-index: 9;
+	transform: rotate(-3deg);
+	animation:youki-text 1s;
+}
+.youki1-content:hover{
+	box-shadow: #969696 1px 1px 28px;
+}
+.youki1-text{
+	border-radius: 4px;
+	background-color: #FFF;
+	padding: 15px;
+}
+.youki1-text p{
+	font-size: 1.2em;
+	color: #C770B8;
+	font-weight: bold;
+}
+/*第二页*/
+.clover_img1 , .clover_img2 , .clover_img3{
+	position: absolute !important;
+	z-index: -1;
+	-webkit-filter: hue-rotate(10deg);
+	animation: flower-fall1 8s linear infinite;
+}
+.clover_img2{
+	animation: flower-fall2 8s linear infinite;
+	animation-delay: 1s;
+	animation-fill-mode:backwards;
+}
+.clover_img3{
+	z-index: 1 !important;
+	animation: flower-fall3 8s linear infinite;
+	animation-delay: 5s;
+	animation-fill-mode:backwards;
+}
+.youki2-identity {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+		left: 250px;
+
+}
+.youki2-about  {
+	position: absolute;
+	z-index: 6;
+	padding: 5px;
+
+}
+.youki2-about1{
+	top: 10%;
+	left: 20%;/* IE6, IE7, IE8 */
+	left: calc(50% - 317px / 2);
+	background: none;
+	transform: rotate(-2deg);
+	animation: youki2-text-bg linear 0.8s;
+	animation-fill-mode:forwards;
+}
+.youki2-about2{
+	top: 25%;
+	left: 27%;/* IE6, IE7, IE8 */
+	left: calc(50% - 228px / 2);
+	background: none;
+	transform: rotate(-2deg);
+	animation: youki2-text-bg-2 linear 0.8s;
+	animation-delay:0.8s;
+	animation-fill-mode:forwards;
+}
+.youki2-about3{
+	top: 40%;
+	left: 18%;/* IE6, IE7, IE8 */
+	left: calc( 50% - 272px );
+	background: none;
+	animation: youki2-text-bg linear 0.8s;
+	animation-delay:1.6s;
+	animation-fill-mode:forwards;
+}
+.youki2-about4{
+	top: 40%;
+	left: 38.2%; /* IE6, IE7, IE8 */
+	left: calc( 50% - 50px);
+	background: none;
+	animation: youki2-text-bg linear 0.8s;
+	animation-delay:1.6s;
+	animation-fill-mode:forwards;
+}
+.youki2-about5{
+	top: 47%; /* IE6, IE7, IE8 */
+	top: calc(40% + 55px);
+	left: 25%;
+	left: calc(50% - 232px / 2); /* IE6, IE7, IE8 */
+	background: none;
+	animation: youki2-text-bg linear 0.8s;
+	animation-delay:2.4s;
+	animation-fill-mode:forwards;
+}
+.youki2-about6{
+	top: 65%;
+	left: 30%; /* IE6, IE7, IE8 */
+	left: calc(50% - 210px / 2);
+	background: none;
+	animation: youki2-text-bg-2 linear 0.8s;
+	animation-delay:3.2s;
+	animation-fill-mode:forwards;
+}
+.youki2-about1:hover{
+	background: url(../img/textbg_pink.png);
+}
+.youki2-about-bg{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 9;
+	height: 100%;
+	box-shadow: 1px 1px 8px;
+	background-color:#FDC0FA;
+	transition: width 1s;
+}
+.youki2-about-bg1{
+  animation: youki2-about-bg linear 0.8s;
+}
+.youki2-about-bg2{
+	background-color:#2584DC !important;
+  animation: youki2-about-bg-2 linear 0.8s;
+	animation-delay:0.8s;
+}
+.youki2-about-bg3 , .youki2-about-bg4{
+  animation: youki2-about-bg linear 0.8s;
+	animation-delay:1.6s;
+}
+.youki2-about-bg5{
+  animation: youki2-about-bg-2 linear 0.8s;
+	animation-delay:2.4s;
+}
+.youki2-about-bg6{
+	background-color:#2584DC !important;
+  animation: youki2-about-bg linear 0.8s;
+	animation-delay:3.2s;
+}
+.youki2-about p{
+	position: relative;
+	z-index: 8;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFF;
+	animation: youki2-about-text linear 0.8s;
+	animation-fill-mode:backwards;
+}
+.youki2-about4 p{
+	left: 0px !important;
+}
+.youki2-about1 p{
+	text-shadow: 2px 0px 0px #F6AEF9,-2px 0px 0px #F6AEF9,0px 2px 0px #F6AEF9,0px -2px 0px #F6AEF9,0px 0px 5px #000;
+}
+.youki2-about2 p{
+	text-shadow: 2px 0px 0px #7AAEDE,-2px 0px 0px #7AAEDE,0px 2px 0px #7AAEDE,0px -2px 0px #7AAEDE,0px 0px 5px #000;
+	animation-delay:0.8s;
+}
+.youki2-about3 p , .youki2-about4 p{
+	text-shadow: 2px 0px 0px #F6AEF9,-2px 0px 0px #F6AEF9,0px 2px 0px #F6AEF9,0px -2px 0px #F6AEF9,0px 0px 5px #000;
+	animation-delay:1.6s;
+}
+.youki2-about5 p{
+	text-shadow: 2px 0px 0px #F6AEF9,-2px 0px 0px #F6AEF9,0px 2px 0px #F6AEF9,0px -2px 0px #F6AEF9,0px 0px 5px #000;
+	animation-delay:2.4s;
+}
+.youki2-about6 p{
+	text-shadow: #0D4056 0px 0px 20px;
+	animation-delay:3.2s;
+}
+.youki2-about7{
+	width: 25%;
+	left: 56%;
+	top: 55%;
+	background: rgba(51, 135, 206, 0.36) !important;
+	animation:youki-text-2 1s;
+	animation-delay:3.2s;
+	animation-fill-mode:backwards;
+	z-index: 8;
+}
+.youki2-about7-text{
+	padding: 5px;
+	color: #FFF;
+	text-shadow: #57CBFF 0px 0px 5px;
+	border-radius: 2px;
+	background-color: rgba(56, 56, 56, 0.43);
+	animation:youki-text-2 1.5s;
+	animation-delay:3.2s;
+	animation-fill-mode:backwards;
+}
+/*第三页*/
+.box-bg3{
+	position: fixed;
+	width: 75% !important;
+	bottom: 0;
+	animation:swiper-img2 1s !important;
+}
+
+/*第四页*/
+.youki4-about {
+    position: absolute;
+    top: 100px;
+    width: 60%;
+    left: 20%;
+}
+.box-bg4 {
+    position: absolute;
+    width: 25% !important;
+    top: 100px;
+    animation: swiper-img3 1s !important;
+}
+.youki3-about1{
+	width: 50%;
+	left: 25%;
+	top: 20%;
+	background: rgba(160, 197, 232, 0) !important;
+	animation: youki-text-2 1s;
+	animation-fill-mode: backwards;
+	z-index: 8;
+}
+.youki3-about1-text{
+	padding: 5px;
+	color: #FFF;
+	text-shadow: #0FCA40 0px 0px 5px;
+	border-radius: 2px;
+	background-color: rgba(66, 101, 117, 0.43);
+	animation:youki-text-2 1.5s;
+	animation-delay:0.2s;
+	animation-fill-mode:backwards;
+}
+.youki3-text-p1{
+	animation:youki-text-2 2s;
+	animation-delay:0.4s;
+	animation-fill-mode: backwards;
+}
+.youki3-text-p2{
+	animation:youki-text-2 2s;
+	animation-delay:2.4s;
+	animation-fill-mode: backwards;
+}
+.youki3-text-p3{
+	animation:youki-text-2 2s;
+	animation-delay:4.4s;
+	animation-fill-mode: backwards;
+}
+/* 右侧内容 */
+#right-box{
+	position: absolute;
+	width: 250px;
+	z-index: 10;
+	right: 0;
+	top: 0;
+	animation:right-box cubic-bezier(0, -0.02, 0, 0.99) 1s;
+}
+.clover{
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	z-index: -1;
+	animation: flower 8s linear infinite;
+}
+.link-img{
+	position: absolute;
+	top: -25px;
+  right: 130px;
+}
+.link-bg{
+	position: absolute;
+	top: 70px;
+  right: 10px;
+}
+.link{
+	margin-top: 40px;
+	right: 20px;
+  width: 200px;
+	opacity: 0.8;
+}
+.link-text{
+	background-color: #FFF;
+	border-radius: 4px;
+	padding: 10px;
+}
+.link-text a{
+	font-size: 26px;
+	padding-left: 35px;
+	font-weight: bold;
+	color: #F6AEF9;
+	text-shadow: 3px 0px 0px #FFF,-3px 0px 0px #FFF,0px 3px 0px #FFF,0px -3px 0px #FFF,0px 0px 15px #000000;
+	transition: color 0.2s;
+
+}
+.link-text a:hover{
+	color: #FFF;
+	text-shadow: 3px 0px 0px #F6AEF9,-3px 0px 0px #F6AEF9,0px 3px 0px #F6AEF9,0px -3px 0px #F6AEF9,0px 0px 15px #000000;
+}
+.link-pixiv-id{
+	color: #FFF;
+  font-size: 5px;
+  position: absolute;
+  top: 168px;
+  right: 4px;
+}
+
+/*anime*/
+@keyframes swiper-img{
+	0%   {opacity: 0; width:70%; top:10px;}
+	50%  {opacity: 0.5; width:110%; top:10px;}
+	100% {opacity: 1; width:100%; top:0px;}
+}
+@keyframes swiper-img2{
+	0%   {opacity: 0; width:65%; bottom: -20px;}
+	50%  {opacity: 0.8; width:78%; bottom: -10px;}
+	100% {opacity: 1; width:75%; bottom: 0;}
+}
+@keyframes swiper-img3{
+	0%   {opacity: 0; top: 110px}
+	50%  {opacity: 0.8; top: 90px}
+	100% {opacity: 1;  top: 100px}
+}
+
+
+@keyframes youki-text{
+	0%   {opacity: 0.2; transform: rotateY(180deg) rotate(90deg);}
+	100% {opacity: 0.8;transform: rotateY(360deg) rotate(-3deg);}
+}
+@keyframes youki-text-2{
+	0%   {opacity: 0.0; transform: rotateY(180deg) rotate(90deg);}
+	100% {opacity: 1;transform: rotateY(360deg) rotate(0deg);}
+}
+@keyframes flower{
+	0%  {transform:rotate(0deg);}
+ 100% {transform:rotate(-360deg);}
+}
+@keyframes flower-fall1{
+	0%  {opacity: 1;transform:rotate(0deg); left: 25%;;top:-100px;}
+	75% {opacity: 1;}
+ 100% {opacity: 0.1;transform:rotate(-360deg);left: 75%;top:80%;}
+}
+@keyframes flower-fall2{
+	0%  {opacity: 1;transform:rotate(0deg); left: 5%;;top:-110px;}
+	75% {opacity: 1;}
+ 100% {opacity: 0.1;transform:rotate(-360deg);left: 50%;top:80%;}
+}
+@keyframes flower-fall3{
+	0%  {opacity: 1;transform:rotate(0deg); left: 45%;;top:-110px;}
+	75% {opacity: 1;}
+ 100% {opacity: 0.1;transform:rotate(-360deg);left: 90%;top:80%;}
+}
+@keyframes top-header{
+	0%   {opacity: 0.2;top:90px; transform: rotate(4deg);}
+	100%{opacity: 1;top:0px;transform: rotate(0deg);}
+}
+@keyframes top-header-img{
+	0%   {transform: scaleX(1.1) scaleY(0.98);}
+	50%  {transform: scaleX(0.98) scaleY(1.1);}
+	100% {transform: scaleX(1) scaleY(1);}
+}
+@keyframes right-box{
+	0%   {opacity: 0.2;top:90px; transform: rotateY(180deg) rotate(4deg);}
+	100% {opacity: 1;top:0px;transform: rotateY(360deg) rotate(0deg);}
+}
+@keyframes youki2-about-bg{
+	0%   {width: 0;left: 0}
+	50%  {width: 100%;left: 0}
+	75%  {width: 50%;left:50% }
+	100% {width: 0%;left: 100%}
+}
+@keyframes youki2-about-bg-2{
+	0%   {width: 0%;left: 100%}
+	50%  {width: 50%;left: 50%}
+	75%  {width: 100%;left:0 }
+	100% {width: 0;left: 0}
+}
+@keyframes youki2-text-bg{
+	0%   {background: none;}
+	50%  {background: none;}
+	75%  {background: url(../img/textbg_pink.png);}
+	100% {background: url(../img/textbg_line_pink.png);}
+}
+@keyframes youki2-text-bg-2{
+	0%   {background: none;}
+	50%  {background: none;}
+	75%  {background: url(../img/textbg_blue.png);}
+	100% {background: url(../img/textbg_line_blue.png);}
+}
+@keyframes youki2-about-text{
+	0%   {opacity: 0}
+	50%  {opacity: 0}
+	75%  {opacity: 1}
+	100% {opacity: 1}
+}

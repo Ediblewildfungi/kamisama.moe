@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+*{
+    font-family: Arial, 'Microsoft YaHei';
+}
+::selection { background: #4EBCFF; }
+::-moz-selection { background: #4EBCFF; }
+
+html,body{
+  height: 100%;
+  margin: 0;
+
+}
+
+h1{
+  color: #fff;
+  text-shadow: 1px 1px 10px #000
+}
+a{
+	text-decoration:none;
+	/* color: #fff;
+	text-shadow:1px 1px 8px #008DFF; */
+	font-family: Arial, 'Microsoft YaHei';
+}
+a:hover{
+  
+}
+li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

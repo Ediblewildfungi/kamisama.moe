@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+  text-shadow: 0px 0px 6px #00F;
+  text-decoration:none;
+  color: #FFF;
+}
+
+body{
+  background-image:url('./bg.jpg');
+  background-size: 100%;
+  background-repeat:no-repeat;
+}
+
+
+h1{
+text-shadow: 0px 0px 15px #60F;
+font-weight: bold;
+color: #FFF;
+padding: 7px 0px 7px 10px;
+text-align:center;
+animation:h1 1.5s;
+-moz-animation:h1 1.5s; /* Firefox */
+-webkit-animation:h1 1.5s; /* Safari and Chrome */
+-o-animation:h1 1.5s; /* Opera */
+}
+
+h2{
+text-shadow: 1px 1px 1px #003300;
+font-weight: bold;
+color: #0FF;
+padding: 7px 0px 7px 10px;
+text-align:center;
+}
+div#m{font-size:1em}
+div.index{
+font-size:1.5em;
+padding:3px;
+box-shadow:2px 2px 15px ;
+border-radius: 2px;
+-moz-box-shadow:2px 2px 15px;
+-webkit-box-shadow:2px 2px 15px;
+width:90%;
+float:left;
+margin: 1% 0 1% 5%;
+opacity: 1;
+opacity: 0.7;
+position:relative;
+transition: width  1s, box-shadow 1s, background 1s; /* 过渡效果 */
+-moz-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Firefox 4 */
+-webkit-transition: width 1s, box-shadow 1s, background 1s;	/* 过渡效果Safari 和 Chrome */
+-o-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Opera */
+animation:div1 1.5s;  /* 动画效果 */
+-moz-animation:div1 1.5s; /* Firefox */
+-webkit-animation:div1 1.5s; /* Safari and Chrome */
+-o-animation:div1 1.5s; /* Opera */
+}
+div.index2{
+font-size:1.5em;
+padding:3px;
+border-radius: 2px;
+box-shadow:2px 2px 15px ;
+-moz-box-shadow:2px 2px 15px;
+-webkit-box-shadow:2px 2px 15px;
+width:90%;
+float:left;
+margin: 1% 0 1% 5%;
+opacity: 0.7;
+position:relative;
+transition: width  1s, box-shadow 1s, background 1s; /* 过渡效果 */
+-moz-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Firefox 4 */
+-webkit-transition: width 1s, box-shadow 1s, background 1s;	/* 过渡效果Safari 和 Chrome */
+-o-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Opera */
+animation:div1 2.5s;
+-moz-animation:div1 2.5s; /* 动画效果Firefox */
+-webkit-animation:div1 2.5s; /* 动画效果Safari and Chrome */
+-o-animation:div1 2.5s; /* 动画效果Opera */
+}
+div.index3{
+font-size:1.5em;
+padding:3px;
+border-radius: 2px;
+box-shadow:2px 2px 15px ;
+-moz-box-shadow:2px 2px 15px;
+-webkit-box-shadow:2px 2px 15px;
+width:90%;
+float:left;
+margin: 1% 0 1% 5%;
+opacity: 0.7;
+position:relative;
+transition: width  1s, box-shadow 1s, background 1s; /* 过渡效果 */
+-moz-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Firefox 4 */
+-webkit-transition: width 1s, box-shadow 1s, background 1s;	/* 过渡效果Safari 和 Chrome */
+-o-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Opera */
+animation:div1 3s;
+-moz-animation:div1 3s; /* 动画效果Firefox */
+-webkit-animation:div1 3s; /* 动画效果Safari and Chrome */
+-o-animation:div1 3s; /* 动画效果Opera */
+}
+div.index:hover
+{
+width:91%;
+background:#333;
+box-shadow:0px 0px 15px #CCC;
+-webkit-box-shadow:0px 0px 15px #CCC;
+-moz-box-shadow:0px 0px 15px #CCC;
+-o-box-shadow:0px 0px 15px #CCC;
+}
+div.index2:hover
+{
+width:91%;
+background:#333;
+box-shadow:0px 0px 15px #CCC;
+-webkit-box-shadow:0px 0px 15px #CCC;
+-moz-box-shadow:0px 0px 15px #CCC;
+-o-box-shadow:0px 0px 15px #CCC;
+}
+div.index3:hover
+{
+width:91%;
+background:#333;
+box-shadow:0px 0px 15px #CCC;
+-webkit-box-shadow:0px 0px 15px #CCC;
+-moz-box-shadow:0px 0px 15px #CCC;
+-o-box-shadow:0px 0px 15px #CCC;
+}
+div.footer-anime{
+font-size:1em;
+padding:3px;
+border-radius: 0px;
+width:90%;
+float:left;
+margin: 20% 0 0.5% 5%;
+opacity: 0;
+position:relative;
+transition: width  1s, box-shadow 1s, background 1s; /* 过渡效果 */
+-moz-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Firefox 4 */
+-webkit-transition: width 1s, box-shadow 1s, background 1s;	/* 过渡效果Safari 和 Chrome */
+-o-transition: width 1s, box-shadow 1s, background 1s;;	/* 过渡效果Opera */
+animation:footer-anime 2.5s;
+-moz-animation:footer-anime 2.5s; /* 动画效果Firefox */
+-webkit-animation:footer-anime 2.5s; /* 动画效果Safari and Chrome */
+-o-animation:div1 2.5s; /* 动画效果Opera */
+}
+
+
+
+
+@keyframes div1
+{
+0%   {opacity: 0; width:70%; top:468px;}
+100% {opacity: 0.8; width:90%; top:0px;}
+}
+@-moz-keyframes div1
+{
+0%   {opacity: 0; width:70%; top:468px;}
+100% {opacity: 0.8; width:90%; top:0px;}
+}
+@-webkit-keyframes div1
+{
+0%   {opacity: 0; width:70%; top:468px;}
+100% {opacity: 0.8; width:90%; top:0px;}
+}
+@-o-keyframes div1
+{
+0%   {opacity: 0; width:70%; top:468px;}
+100% {opacity: 0.8; width:90%; top:0px;}
+}
+
+@keyframes h1
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+@-moz-keyframes h1
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+@-webkit-keyframes h1
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+@-o-keyframes h1
+{
+0%   {opacity: 0;}
+100% {opacity: 1;}
+}
+ /* 以下为测试内容 */
+.add-desktop {
+  pointer-events: none;/*以后需要更改，此属性不会捕获任何click事件，而是让事件穿过该元素到达下面的元素，即点击穿透。*/
+  opacity: 0;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  width: 210px;
+  margin-left: -105px;
+  background: #FFF;
+  padding: 5px;
+  -webkit-border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  z-index: 4;
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+.add-desktop:before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -12px;
+  height: 14px;
+  width: 14px;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+.add-desktop:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  height: 15px;
+  width: 30px;
+  overflow: hidden;
+  background: #fff;
+}.add-desktop .icon {
+  float: left;
+  display: block;
+  width: 67px;
+  height: 67px;
+  background: url(../apple-touch-icon.png) no-repeat top center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.add-desktop .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 3;
+}
+.add-desktop .icon-x {
+  margin: 5px 0 0 10px;
+  color: gray;
+  cursor: pointer;
+}
+.icon-x:before {
+  content: "\e63f";
+}
+.add-desktop .upload {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background: url(../img/upload.svg) no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
+}
+.add-desktop .desc {
+  float: left;
+  margin-left: 10px;
+  color: gray;
+  position: relative;
+  z-index: 2;
+}
+.icon, .iconfont, [class^=icon-], [class*=" icon-"] {
+  display: inline-block;
+  font-family: tuiicon;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
