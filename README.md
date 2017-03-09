@@ -2,4 +2,4 @@
 
 一个长门有希的介绍页面
 
-示例页面：<http://kamisama.moe/>
+示例页面：<https://kamisama.moe/>
